@@ -3,8 +3,8 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import path from 'path';
-import * as Sentry from "@sentry/node";
-import * as Tracing from "@sentry/tracing";
+import * as Sentry from '@sentry/node';
+import * as Tracing from '@sentry/tracing';
 import ForbiddenError from 'src/utils/errors/ForbiddenError';
 
 
@@ -53,9 +53,9 @@ app.use(
 
 keycloak.accessDenied = (req, res, next) => {
   if (
-    req.xhr && !req?.kauth?.grant?.['access_token']?.content
+    req.xhr && !req?.kauth?.grant?.access_token?.content
   ) {
-    return next(new AuthError('Erreur de token keycloak'));
+    return next(new ForbiddenError('Erreur de token keycloak'));
   }
   return next(new ForbiddenError());
 };

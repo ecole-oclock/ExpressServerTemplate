@@ -4,7 +4,7 @@ import components from './components';
 import tags from './tags';
 import paths from './paths';
 
-module.exports = {
+export default {
   ...basicInfo,
   ...servers,
   ...components,

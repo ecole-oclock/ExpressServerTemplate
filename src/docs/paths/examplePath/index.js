@@ -1,6 +1,6 @@
-const getExample = require('./get-example');
+import getExample from './get-example';
 
-module.exports = {
+export default {
   '/example': {
     ...getExample,
   },

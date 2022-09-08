@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   bearerAuth: {
     // arbitrary name for the security scheme
     type: 'http',

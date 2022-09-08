@@ -1,4 +1,4 @@
-import ExtendableError from "src/utils/errors/ExtendableError";
+import ExtendableError from 'src/utils/errors/ExtendableError';
 
 /**
  * Class representing an API error.

@@ -12,7 +12,7 @@ const autoSelectServerPlugin = () => ({
     spec: {
       wrapActions: {
         updateJsonSpec: (oriAction) => (specs) => {
-          const servers = specs.servers;
+          const { servers } = specs;
           if (typeof window !== 'undefined') {
             // eslint-disable-next-line no-undef
             const currentServerIndex = servers.findIndex((server) => server.url.includes(window.location.host));

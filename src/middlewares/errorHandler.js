@@ -30,5 +30,5 @@ export default function errorMiddleware(err, _, res, next) {
     return next(err);
   }
 
-  return res.status(500).send(err.isPublic ? err.message : "Une erreur est survenue durant la communication avec le serveur");
+  return res.status(500).send(err.isPublic ? err.message : 'Une erreur est survenue durant la communication avec le serveur');
 }

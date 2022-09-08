@@ -11,23 +11,22 @@ export const withRole = (role = null) => (req, res, next) => {
     return;
   }
 
-  const hasTheRole = req.kauth.grant.access_token.hasRole(aRole);
+  const hasTheRole = req.kauth.grant.access_token.hasRole(role);
 
   if (!hasTheRole) {
     next(new ForbiddenError());
-  }
-  else {
+  } else {
     next();
   }
 };
 
-export default new Keycloak({},{
-    realm: process.env.KEYCLOAK_REALM,
-    'auth-server-url': process.env.KEYCLOAK_URL,
-    'ssl-required': 'external',
-    resource:  process.env.KEYCLOAK_CLIENT_ID,
-    credentials: {
-      secret: process.env.KEYCLOAK_SECRET,
-    },
-    'confidential-port': 0,
+export default new Keycloak({}, {
+  realm: process.env.KEYCLOAK_REALM,
+  'auth-server-url': process.env.KEYCLOAK_URL,
+  'ssl-required': 'external',
+  resource: process.env.KEYCLOAK_CLIENT_ID,
+  credentials: {
+    secret: process.env.KEYCLOAK_SECRET,
+  },
+  'confidential-port': 0,
 });

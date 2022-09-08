@@ -1,4 +1,4 @@
-import ExtendableError from "src/utils/errors/ExtendableError";
+import ExtendableError from 'src/utils/errors/ExtendableError';
 import status from 'http-status';
 
 class BadRequestError extends ExtendableError {
@@ -8,4 +8,3 @@ class BadRequestError extends ExtendableError {
   }
 }
 export default BadRequestError;
-

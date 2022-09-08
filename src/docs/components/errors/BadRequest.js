@@ -1,5 +1,6 @@
-const ExtendableError = require('./ExtendableError');
-module.exports = {
+import ExtendableError from './ExtendableError';
+
+export default {
   BadRequest: {
     type: 'object', // data type
     properties: {

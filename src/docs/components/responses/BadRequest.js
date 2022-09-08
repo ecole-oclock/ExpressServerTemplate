@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   BadRequest: {
     description: 'Requête mal formée', // response desc.
     content: {

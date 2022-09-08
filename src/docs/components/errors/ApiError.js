@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   ApiError: {
     type: 'object', // data type
     properties: {

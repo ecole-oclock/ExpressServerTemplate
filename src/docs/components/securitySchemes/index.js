@@ -1,5 +1,1 @@
-import bearerAuth from './bearerAuth';
-
-module.exports = {
-  ...bearerAuth,
-};
+export { default as bearerAuth } from './bearerAuth';

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   NotFound: {
     description: 'Page introuvable', // response desc.
     content: {

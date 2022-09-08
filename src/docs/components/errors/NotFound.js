@@ -1,6 +1,6 @@
-const ExtendableError = require('./ExtendableError');
+import ExtendableError from './ExtendableError';
 
-module.exports = {
+export default {
   NotFound: {
     type: 'object', // data type
     properties: {

@@ -3,7 +3,7 @@ import errors from './errors';
 import securitySchemes from './securitySchemes';
 import responses from './responses';
 
-module.exports = {
+export default {
   components: {
     securitySchemes,
     responses,

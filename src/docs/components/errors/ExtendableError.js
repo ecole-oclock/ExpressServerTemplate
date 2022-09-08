@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   name: {
     type: 'string', // data type
     example: 'Error',
@@ -10,5 +10,5 @@ module.exports = {
   status: {
     type: 'integer', // data type
     example: 500,
-  }
+  },
 };

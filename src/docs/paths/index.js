@@ -1,6 +1,6 @@
 import examplePath from './examplePath';
 
-module.exports = {
+export default {
   paths: {
     ...examplePath,
   },

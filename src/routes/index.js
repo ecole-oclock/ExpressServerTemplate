@@ -14,7 +14,7 @@ import keycloak from 'src/utils/keycloak';
 // Import des routes
 import apiRoutes from 'src/routes/api';
 
-export default (app) => {
+export default () => {
   const router = new Router();
   /**
    * Doc Swagger

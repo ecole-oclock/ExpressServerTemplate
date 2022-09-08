@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   ApiError: {
     description: 'Une erreur est survenue', // response desc.
     content: {
