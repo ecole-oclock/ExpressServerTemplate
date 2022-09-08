@@ -1,0 +1,8 @@
+module.exports = {
+  bearerAuth: {
+    // arbitrary name for the security scheme
+    type: 'http',
+    scheme: 'bearer',
+    bearerFormat: 'JWT', // optional, arbitrary value for documentation purposes
+  },
+};
