@@ -1,6 +1,6 @@
 {
   "name": "expressservertemplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Template de serveur Express",
   "main": "index.js",
   "scripts": {
